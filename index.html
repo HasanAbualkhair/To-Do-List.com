@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="box">
+         <div class="stats-box">
+            <div class="name">
+              <h1>To-Do List</h1>    
+            </div>
+
+            <div class="stats-numbers">
+                <div class="stats-item">
+                    <p>Total Tasks</p>
+                     <h2 id="total-tasks">0</h2>
+                </div>
+                <div class="stats-item">
+                    <p>Completed Tasks</p>
+                    <h2 id="completed-tasks">0</h2>
+                    
+                </div>
+                <div class="stats-item">
+                    <p>Pending Tasks</p>
+                    <h2 id="pending-tasks">0</h2>     
+            </div>
+         </div>
+
+          <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+          </div>
+
+    </div>
+
+     <form action="" class="task-form" id="task-form">
+        <input type="text" class="task-input" id="task-input" placeholder="Enter a new task..." required>
+        <button class="new-task" id="new-task" type="submit">+</button>
+    </form>
+
+    <ul class="task-list" id="task-list"></ul>
+
+</body>
+
+</html>
